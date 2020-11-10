@@ -11,7 +11,6 @@ The datasets can be viewed as classification or regression tasks. The classes ar
 
 ##Content
 
-For more information, read [Cortez et al., 2009].
 Input variables (based on physicochemical tests):
 
 1 - fixed acidity
@@ -34,10 +33,6 @@ Output variable (based on sensory data):
 Tips
 
 What might be an interesting thing to do, is aside from using regression modelling, is to set an arbitrary cutoff for your dependent variable (wine quality) at e.g. 7 or higher getting classified as 'good/1' and the remainder as 'not good/0'. This allows you to practice with hyper parameter tuning on e.g. decision tree algorithms looking at the ROC curve and the AUC value. Without doing any kind of feature engineering or overfitting you should be able to get an AUC of .88 (without even using random forest algorithm)
-
-KNIME is a great tool (GUI) that can be used for this.
-1 - File Reader (for csv) to linear correlation node and to interactive histogram for basic EDA.
-2- File Reader to 'Rule Engine Node' to turn the 10 point scale to dichtome variable (good wine and rest), the code to put in the rule engine is something like this:
 
 $quality$ > 6.5 => "good"
 TRUE => "bad"
