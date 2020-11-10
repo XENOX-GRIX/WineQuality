@@ -1,5 +1,5 @@
 # WineQuality
-This will contain a set of regression models tested on winequality.csv to rate the quality of a wine sample within 0-10.
+This will contain a set of regression models tested on winequality.csv to rate the quality of a wine sample within 0-10 and label the wine as good or bad.
 
 
 About this file
